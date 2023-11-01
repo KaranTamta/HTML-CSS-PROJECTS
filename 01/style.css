@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gotham;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.mainBox{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 350px;
+    height: 60vh;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+.personContainer{
+    height: 20vh;
+    background-color: rgb(56, 122, 255);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.imageContainer{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    background-color: rgb(56, 122, 255);
+    bottom: -30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.whiteBg{
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: white;
+    padding: 3px;
+    scale: 0.95;
+}
+.whiteBg > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    scale: 1;
+}
+
+
+.infoContainer{
+    /* background-color: red; */
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5em 0;
+}
+
+.infoContainer > h1{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.infoContainer > p{
+    font-size: 1rem;
+    padding-top: 0.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+
+
+.socials > ul{
+    display: flex;
+    gap: 15px;
+    padding-top: 1em;
+}
+.socials ul > li{
+    list-style: none;
+    /* background-color: black; */
+    border-radius: 50%;
+    padding: 8px;
+}
+.socials li > i{
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: white;
+}
+.socials li:nth-child(1){
+    background-color: rgb(53, 107, 255);
+}
+.socials li:nth-child(2){
+    background-color: rgb(53, 205, 255);
+}
+.socials li:nth-child(3){
+    background-color: rgb(232, 0, 85);
+}
+.socials li:nth-child(4){
+    background-color: red;
+}
+
+
+
+.btnGroup{
+    display: flex;
+    gap: 15px;
+    padding-top: 1.5em;
+}
+.btnGroup button{
+    cursor: pointer;
+    width: 130px;
+    height: 5vh;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgba(56, 122, 255, 0.8);
+    transition: all ease 0.2s;
+}
+.btnGroup button:hover{
+    background-color: rgb(30, 101, 245);
+}
+
+
+.likeSection > ul{
+    display: flex;
+}
+.likeSection ul > li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-top: 1.5em;
+}
+.likeSection li > a{
+    text-decoration: none;
+    color: black;
+    padding-top: 0.1em;
+}
+
+.likeSection li:nth-child(1)::before{
+    content: "\2661";
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
+.likeSection li:nth-child(1)::after{
+    content: "";
+    width: 2px;
+    height: 60%;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin: 0 1em;
+}
+.likeSection li:nth-child(2)::before{
+    content: "\1F4AC";
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+.likeSection li:nth-child(2)::after{
+    content: "";
+    width: 2px;
+    height: 60%;
+    background-color: rgba(128, 128, 128, 0.3);
+    margin: 0 1em;
+}
+.likeSection li:nth-child(3)::before{
+    content: "\21AA";
+    font-size: 1.5rem;
+    margin-right: 5px;
+}
