@@ -1,80 +1,79 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-html, body{
-    width: 100%;
-    height: 100%;
-}
-
-.mainBox{
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.container{
-    width: 500px;
-    height: 25vh;
-    /* background-color: red; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 5em;
+.mainBox {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.toogleBox{
-    width: 100%;
-    height: 20vh;
-    background-color: rgba(214, 214, 214, 0.998);
-    border-radius: 80px;
-    padding: 1.5em 2em;
-    position: relative;
-    transition: all ease 0.3s;
+.container {
+  width: 500px;
+  height: 25vh;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5em;
 }
 
-.colorBox{
-    width: 110px;
-    height: 14vh;
-    background-color: white;
-    position: absolute;
-    border-radius: 50%;
-    transition: all ease 0.3s;
-    /* left: 57.5%; */
+.toogleBox {
+  width: 100%;
+  height: 20vh;
+  background-color: rgba(214, 214, 214, 0.998);
+  border-radius: 80px;
+  padding: 1.5em 2em;
+  position: relative;
+  transition: all ease 0.3s;
 }
 
-.unlock{
-    width: 110px;
-    height: 14vh;
-    text-align: center;
-    padding: 5px;
-    padding: 1em 0;
-    position: absolute;
-    
+.colorBox {
+  width: 110px;
+  height: 14vh;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  transition: all ease 0.3s;
+  /* left: 57.5%; */
 }
-.unlock > i{
-    font-size: 4rem;
-    color: rgb(190, 190, 190);
-    transition: all ease 0.5s;
+
+.unlock {
+  width: 110px;
+  height: 14vh;
+  text-align: center;
+  padding: 5px;
+  padding: 1em 0;
+  position: absolute;
+}
+.unlock > i {
+  font-size: 4rem;
+  color: rgb(190, 190, 190);
+  transition: all ease 0.5s;
 }
 
 /* #7D29DF */
-.lock{
-    display: none;
-    width: 110px;
-    height: 14vh;
-    position: absolute;
-    text-align: center;
-    right: 10%;
-    padding: 5px;
-    
-    padding: 1em 0;
-}
-.lock > i{
-    font-size: 4rem;
-    /* color: #7D29DF; */
-    transition: all ease 0.5s;
-}
+.lock {
+  display: none;
+  width: 110px;
+  height: 14vh;
+  position: absolute;
+  text-align: center;
+  right: 10%;
+  padding: 5px;
 
+  padding: 1em 0;
+}
+.lock > i {
+  font-size: 4rem;
+  /* color: #7D29DF; */
+  transition: all ease 0.5s;
+}
