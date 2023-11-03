@@ -1,2 +1,2 @@
 # HTML-CSS-PROJECTS
-This is only part of practicing html , css and github learning process 
+This is only part of practicing html , css, js and github learning process 
