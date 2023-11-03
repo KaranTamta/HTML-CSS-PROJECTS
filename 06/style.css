@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gotham;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+.mainBox{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF676E;
+}
+
+.container{
+    width: 55px;
+    height: 7vh;
+    /* background-color: red; */
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    transition: all ease 0.4s;
+}
+.container > input{
+    width: 0%;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    transition: all ease 0.5s;
+}
+::placeholder{
+    color: rgba(128, 128, 128, 0.699);
+}
+
+.search{
+    width: 55px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    
+}
+.search i{
+    font-size: 1.5rem;
+    color: #FF676E;
+    font-weight: 700;
+}
+#check{
+    display: none;
+}
+
+#check:checked ~ .container > input{
+    padding: 0 1.5em;
+    width: 100%;
+}
+#check:checked ~ .container{
+    width: 450px;
+}
+#check:checked ~ .container .search{
+    width: 60px;
+    border-radius: 0px;
+    background-color: #FF676E;
+}
+#check:checked ~ .container .search i{
+    color: white;
+}
