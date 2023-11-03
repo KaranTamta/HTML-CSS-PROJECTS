@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gotham;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+
+.mainBox{
+    height: 100vh;
+    background-color: #DAD3F6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 60%;
+    height: 65vh;
+    background-color: white;
+    padding: 2em 4em;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+/*  background-color: #6C51DA; */
+.tabs{
+    position: relative;
+}
+
+.tabs ul{
+    position: absolute;
+}
+.tabs li{
+    width: 130px;
+    height: 7vh;
+    list-style: none;
+    margin-top: 0.5em;
+    display: flex;
+    align-items: center;
+    padding-left: 1.2em;
+    justify-content: start;
+    border-radius: 8px;
+    
+}
+.tabs a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.tabs i{
+    padding: 0 0.2em;
+}
+
+.colorBox{
+    /* display: none; */
+    width: 130px;
+    height: 7vh;
+    position: absolute;
+    background-color: #6C51DA;
+    top: 8px;
+    border-radius: 8px;
+    transition: all ease 0.3s;
+}
+li > .home{
+    color : white;
+}
+
+
+#homeContent{
+    display: block;
+}
+#blogContent{
+    display: none;
+}
+#helpContent{
+    display: none;
+}
+#codeContent{
+    display: none;
+}
+#aboutContent{
+    display: none;
+}
+
+.typography{
+    margin: 2em 0;
+    padding: 2em 0em;
+    margin-left: 12em;
+}
+.typography h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.typography p{
+    font-size: 1rem;
+    line-height: 1.7;
+    padding: 1em 0;
+}
